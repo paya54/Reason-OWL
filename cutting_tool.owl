@@ -1,0 +1,694 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/bba/ontologies/2020/7/cutting-tools"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/bba/ontologies/2020/7/cutting-tools">
+    <Prefix name="" IRI="http://www.semanticweb.org/bba/ontologies/2020/7/cutting-tools"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AFO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreakageReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoolantReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuttingParameterReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoleMachiningTool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoleType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MachineReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicalReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RawPartReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapBreakOut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapBreakage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapTwistedBuiltUpEdge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapTwistedInBlindHole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapTwistedInBlindHoleLittleChip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapTwistedInBlindHoleLotChip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapTwistedInThroughHole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapTwistedInThroughHoleLittleChip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapTwistedInThroughHoleLotChip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapTwistedNoBuiltUpEdge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapTwistedOff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToolBreakage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToolBreakageType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToolReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToolType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#broken_in_afo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#broken_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tap_break_out_in_afo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tap_broken_in_afo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tool_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#twisted_hole_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#edge_built_up"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_chip_amount"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AFO120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AFO130"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AFO140"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AFO210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AFO220"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AFO230"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BlindHole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BreakOut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolantCanalCapacityTooSmall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolantCanalOversize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolantInsufficient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolantParameterFault"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolantSlotCapacityTooSmall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolantSlotOversize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CuttingSpeedExceedLimit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GunDrill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RawPartHardnessInsufficient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ThroughHole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ToolDefect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ToolGeometryDefect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwistedDrill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwistedOff"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#TapBreakOut"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#broken_type"/>
+            <NamedIndividual IRI="#BreakOut"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapBreakage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#tool_type"/>
+            <NamedIndividual IRI="#Tap"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapTwistedBuiltUpEdge"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+                <Class IRI="#AFO"/>
+            </ObjectMinCardinality>
+            <DataHasValue>
+                <DataProperty IRI="#edge_built_up"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapTwistedInBlindHole"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+                <Class IRI="#AFO"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#twisted_hole_type"/>
+                <NamedIndividual IRI="#BlindHole"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapTwistedInBlindHoleLittleChip"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+                <Class IRI="#AFO"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#twisted_hole_type"/>
+                <NamedIndividual IRI="#BlindHole"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#has_chip_amount"/>
+                <Literal>little</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapTwistedInBlindHoleLotChip"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+                <Class IRI="#AFO"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#twisted_hole_type"/>
+                <NamedIndividual IRI="#BlindHole"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#has_chip_amount"/>
+                <Literal>lot</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapTwistedInThroughHole"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+                <Class IRI="#AFO"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#twisted_hole_type"/>
+                <NamedIndividual IRI="#ThroughHole"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapTwistedInThroughHoleLittleChip"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+                <Class IRI="#AFO"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#twisted_hole_type"/>
+                <NamedIndividual IRI="#ThroughHole"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#has_chip_amount"/>
+                <Literal>little</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapTwistedInThroughHoleLotChip"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+                <Class IRI="#AFO"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#twisted_hole_type"/>
+                <NamedIndividual IRI="#ThroughHole"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#has_chip_amount"/>
+                <Literal>lot</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapTwistedNoBuiltUpEdge"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+                <Class IRI="#AFO"/>
+            </ObjectMinCardinality>
+            <DataHasValue>
+                <DataProperty IRI="#edge_built_up"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapTwistedOff"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#broken_type"/>
+            <NamedIndividual IRI="#TwistedOff"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#CoolantReason"/>
+        <Class IRI="#BreakageReason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CuttingParameterReason"/>
+        <Class IRI="#MachineReason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoleMachiningTool"/>
+        <Class IRI="#ToolType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MachineReason"/>
+        <Class IRI="#BreakageReason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalReason"/>
+        <Class IRI="#MachineReason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RawPartReason"/>
+        <Class IRI="#BreakageReason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapBreakOut"/>
+        <Class IRI="#TapBreakage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapBreakage"/>
+        <Class IRI="#ToolBreakage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapTwistedBuiltUpEdge"/>
+        <Class IRI="#TapTwistedOff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapTwistedInBlindHole"/>
+        <Class IRI="#TapTwistedOff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapTwistedInBlindHoleLittleChip"/>
+        <Class IRI="#TapTwistedInBlindHole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapTwistedInBlindHoleLotChip"/>
+        <Class IRI="#TapTwistedInBlindHole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapTwistedInThroughHole"/>
+        <Class IRI="#TapTwistedOff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapTwistedInThroughHoleLittleChip"/>
+        <Class IRI="#TapTwistedInThroughHole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapTwistedInThroughHoleLotChip"/>
+        <Class IRI="#TapTwistedInThroughHole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapTwistedNoBuiltUpEdge"/>
+        <Class IRI="#TapTwistedOff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapTwistedOff"/>
+        <Class IRI="#TapBreakage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ToolReason"/>
+        <Class IRI="#BreakageReason"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#TapTwistedBuiltUpEdge"/>
+        <Class IRI="#TapTwistedNoBuiltUpEdge"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TapTwistedInBlindHole"/>
+        <Class IRI="#TapTwistedInThroughHole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TapTwistedInBlindHoleLittleChip"/>
+        <Class IRI="#TapTwistedInBlindHoleLotChip"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TapTwistedInThroughHoleLittleChip"/>
+        <Class IRI="#TapTwistedInThroughHoleLotChip"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="#TapTwistedInBlindHole"/>
+        <Class IRI="#TapTwistedInBlindHoleLittleChip"/>
+        <Class IRI="#TapTwistedInBlindHoleLotChip"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class IRI="#TapTwistedInThroughHole"/>
+        <Class IRI="#TapTwistedInThroughHoleLittleChip"/>
+        <Class IRI="#TapTwistedInThroughHoleLotChip"/>
+    </DisjointUnion>
+    <ClassAssertion>
+        <Class IRI="#AFO"/>
+        <NamedIndividual IRI="#AFO120"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AFO"/>
+        <NamedIndividual IRI="#AFO130"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AFO"/>
+        <NamedIndividual IRI="#AFO140"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AFO"/>
+        <NamedIndividual IRI="#AFO210"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AFO"/>
+        <NamedIndividual IRI="#AFO220"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AFO"/>
+        <NamedIndividual IRI="#AFO230"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HoleType"/>
+        <NamedIndividual IRI="#BlindHole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ToolBreakageType"/>
+        <NamedIndividual IRI="#BreakOut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoolantReason"/>
+        <NamedIndividual IRI="#CoolantCanalCapacityTooSmall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoolantReason"/>
+        <NamedIndividual IRI="#CoolantCanalOversize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoolantReason"/>
+        <NamedIndividual IRI="#CoolantInsufficient"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoolantReason"/>
+        <NamedIndividual IRI="#CoolantParameterFault"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoolantReason"/>
+        <NamedIndividual IRI="#CoolantSlotCapacityTooSmall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoolantReason"/>
+        <NamedIndividual IRI="#CoolantSlotOversize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuttingParameterReason"/>
+        <NamedIndividual IRI="#CuttingSpeedExceedLimit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HoleMachiningTool"/>
+        <NamedIndividual IRI="#GunDrill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RawPartReason"/>
+        <NamedIndividual IRI="#RawPartHardnessInsufficient"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HoleMachiningTool"/>
+        <NamedIndividual IRI="#Tap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HoleType"/>
+        <NamedIndividual IRI="#ThroughHole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ToolReason"/>
+        <NamedIndividual IRI="#ToolDefect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ToolReason"/>
+        <NamedIndividual IRI="#ToolGeometryDefect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HoleMachiningTool"/>
+        <NamedIndividual IRI="#TwistedDrill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ToolBreakageType"/>
+        <NamedIndividual IRI="#TwistedOff"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AFO120"/>
+        <NamedIndividual IRI="#AFO130"/>
+        <NamedIndividual IRI="#AFO140"/>
+        <NamedIndividual IRI="#AFO210"/>
+        <NamedIndividual IRI="#AFO220"/>
+        <NamedIndividual IRI="#AFO230"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#BlindHole"/>
+        <NamedIndividual IRI="#ThroughHole"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantCanalCapacityTooSmall"/>
+        <NamedIndividual IRI="#CoolantCanalOversize"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantCanalCapacityTooSmall"/>
+        <NamedIndividual IRI="#CoolantInsufficient"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantCanalCapacityTooSmall"/>
+        <NamedIndividual IRI="#CoolantParameterFault"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantCanalCapacityTooSmall"/>
+        <NamedIndividual IRI="#CoolantSlotCapacityTooSmall"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantCanalCapacityTooSmall"/>
+        <NamedIndividual IRI="#CoolantSlotOversize"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantCanalOversize"/>
+        <NamedIndividual IRI="#CoolantInsufficient"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantCanalOversize"/>
+        <NamedIndividual IRI="#CoolantParameterFault"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantCanalOversize"/>
+        <NamedIndividual IRI="#CoolantSlotCapacityTooSmall"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantCanalOversize"/>
+        <NamedIndividual IRI="#CoolantSlotOversize"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantInsufficient"/>
+        <NamedIndividual IRI="#CoolantParameterFault"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantInsufficient"/>
+        <NamedIndividual IRI="#CoolantSlotCapacityTooSmall"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantInsufficient"/>
+        <NamedIndividual IRI="#CoolantSlotOversize"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantParameterFault"/>
+        <NamedIndividual IRI="#CoolantSlotCapacityTooSmall"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantParameterFault"/>
+        <NamedIndividual IRI="#CoolantSlotOversize"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#CoolantSlotCapacityTooSmall"/>
+        <NamedIndividual IRI="#CoolantSlotOversize"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#GunDrill"/>
+        <NamedIndividual IRI="#Tap"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#GunDrill"/>
+        <NamedIndividual IRI="#TwistedDrill"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Tap"/>
+        <NamedIndividual IRI="#TwistedDrill"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#ToolDefect"/>
+        <NamedIndividual IRI="#ToolGeometryDefect"/>
+    </DifferentIndividuals>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#broken_type"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tool_type"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#twisted_hole_type"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#broken_in_afo"/>
+        <Class IRI="#ToolBreakage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#broken_type"/>
+        <Class IRI="#ToolBreakage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tap_break_out_in_afo"/>
+        <Class IRI="#TapBreakOut"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tap_broken_in_afo"/>
+        <Class IRI="#TapBreakage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+        <Class IRI="#TapTwistedOff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tool_type"/>
+        <Class IRI="#ToolBreakage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#twisted_hole_type"/>
+        <Class IRI="#TapTwistedOff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#broken_in_afo"/>
+        <Class IRI="#AFO"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#broken_type"/>
+        <Class IRI="#ToolBreakageType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tap_break_out_in_afo"/>
+        <Class IRI="#AFO"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tap_broken_in_afo"/>
+        <Class IRI="#AFO"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tap_twisted_off_in_afo"/>
+        <Class IRI="#AFO"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tool_type"/>
+        <Class IRI="#ToolType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#twisted_hole_type"/>
+        <Class IRI="#HoleType"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#edge_built_up"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#has_chip_amount"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#edge_built_up"/>
+        <Class IRI="#TapTwistedOff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_chip_amount"/>
+        <Class IRI="#TapTwistedOff"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#edge_built_up"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_chip_amount"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
